@@ -74,10 +74,10 @@ body {
   color: var(--white);
   font-size: 26px;
   bottom: 28px;
-  right: 28px;
+  right: 15px;
   z-index: 9999;
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 #whatsapp .wtsapp:hover {
@@ -151,8 +151,8 @@ body {
   transition: color var(--transition), background var(--transition);
 }
 .navbar .list-in a:hover {
-  color: var(--blue-600);
-  background: var(--blue-50);
+  color: var(--blue-900);
+  background: var(--blue-950);
 }
 .navbar .list-in a:focus-visible {
   outline: 2px solid var(--blue-500);
@@ -193,7 +193,7 @@ body {
 
 @media (max-width: 890px) {
   .navbar {
-    background: var(--white);
+    background: var(--gradient-nav-mobile);
   }
   .navbar.scrolled {
     background: var(--gradient-nav-mobile);
