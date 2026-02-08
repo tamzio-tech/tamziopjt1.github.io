@@ -1,30 +1,30 @@
 /* ===== Tamzio Technologies – Luxurious Blue & Gradient Theme ===== */
 :root {
   /* Luxurious blue palette */
-  --blue-950: #0c1929;
-  --blue-900: #0f2744;
-  --blue-800: #1e3a5f;
-  --blue-700: #1d4ed8;
-  --blue-600: #2563eb;
-  --blue-500: #3b82f6;
-  --blue-400: #60a5fa;
+  --blue-950: #254265;
+  --blue-900: #234670;
+  --blue-800: #29486f;
+  --blue-700: #406ff0;
+  --blue-600: #4078f2;
+  --blue-500: #3b95f6;
+  --blue-400: #6eacf8;
   --blue-200: #bfdbfe;
-  --blue-100: #dbeafe;
+  --blue-100: #b3cbea;
   --blue-50: #eff6ff;
   --white: #ffffff;
-  --off-white: #f8fafc;
+  --off-white: #edf2f8;
   --surface: #eff6ff;
   --text: #0f172a;
-  --text-muted: #475569;
+  --text-muted: #3e4a5c;
   /* Gradient themes */
   --gradient-hero: linear-gradient(135deg, #ffffff 0%, #eff6ff 35%, #dbeafe 70%, #ffffff 100%);
   --gradient-section: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
-  --gradient-btn: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
-  --gradient-nav: linear-gradient(90deg, #ffffff 0%, #eff6ff 40%, #2563eb 100%);
+  --gradient-btn: linear-gradient(135deg, #5b8aee 0%, #3265f1 50%, #2f55d3 100%);
+  --gradient-nav: linear-gradient(90deg, #ffffff 20%, #59b5f2 40%, #2563eb 100%);
   --gradient-nav-mobile: linear-gradient(90deg, #ffffff 0%, #dbeafe 50%, #2563eb 100%);
-  --gradient-footer: linear-gradient(180deg, #0c1929 0%, #0f2744 100%);
+  --gradient-footer: linear-gradient(180deg, #13263c 0%, #0f2744 100%);
   --shadow-sm: 0 1px 2px rgba(15, 39, 68, 0.06);
-  --shadow-md: 0 4px 12px rgba(15, 39, 68, 0.08);
+  --shadow-md: 0 7px 12px rgba(15, 39, 68, 0.08);
   --shadow-lg: 0 12px 40px rgba(15, 39, 68, 0.12);
   --radius: 12px;
   --radius-lg: 20px;
@@ -65,7 +65,7 @@ body {
 /* ----- WhatsApp float ----- */
 #whatsapp .wtsapp {
   position: fixed;
-  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  background: linear-gradient(135deg, #25d366 0%, #128c4b 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -626,10 +626,10 @@ body {
 }
 .projects .about-grid {
   background: transparent;
-  padding: 0;
+  padding: 10px;
   border: none;
   box-shadow: none;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .projects .about-grid:last-of-type { margin-bottom: 0; }
 .projects .about-para h2,
@@ -646,14 +646,15 @@ body {
 }
 .project-image {
   width: 100%;
-  max-width: 420px;
+  max-width: 350px;
+  padding: center;
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
 }
 
 @media (max-width: 768px) {
-  .projects .about-grid { margin-bottom: 32px; }
+  .projects .about-grid { margin-bottom: 28px; }
 }
 
 /* ----- Contact ----- */
@@ -665,9 +666,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  max-width: 1000px;
+  max-width: 1250px;
   margin: 0 auto;
-  align-items: start;
+  align-items: center;
 }
 .contact-item {
   background: var(--white);
@@ -739,7 +740,7 @@ body {
   outline-offset: 2px;
 }
 .contact-para h1 {
-  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-size: clamp(3.2rem, 2.8vw, 5.85rem);
   color: var(--text);
   margin-bottom: 20px;
   font-weight: 700;
@@ -751,15 +752,15 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  font-weight: 900;
 }
 .contact-para ul {
   list-style: none;
 }
 .contact-para li {
   color: var(--text-muted);
-  padding: 6px 0;
-  font-size: 1rem;
+  padding: 6px 10px 0px 10px;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -770,14 +771,14 @@ body {
 .footer {
   background: var(--gradient-footer);
   color: var(--blue-200);
-  padding: 40px 24px 24px;
+  padding: 40px 24px 24px ;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   max-width: 1000px;
-  margin: 0 auto 32px;
+  margin: 10px auto 32px;
 }
 .foot-services h2 {
   font-size: 1.1rem;
